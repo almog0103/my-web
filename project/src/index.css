@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add custom styles for partner logos */
+.partner-logo {
+  transition: all 0.5s ease-in-out;
+}
+
+.partner-logo:hover {
+  filter: none !important;
+}
+
+/* Global button styles */
+@layer components {
+  .btn {
+    @apply px-6 py-3 border border-transparent text-base font-medium transition-all;
+  }
+  
+  .btn-primary {
+    @apply bg-[#034078] text-[#FEFCFB] hover:bg-[#034078]/90;
+  }
+  
+  .btn-secondary {
+    @apply bg-[#1282A2] text-[#FEFCFB] hover:bg-[#1282A2]/90;
+  }
+  
+  .btn-outline {
+    @apply border-2 border-[#1282A2] text-[#1282A2] hover:bg-[#1282A2]/10;
+  }
+}
